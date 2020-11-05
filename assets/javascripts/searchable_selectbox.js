@@ -56,14 +56,14 @@ function replaceSelect2() {
     } else {
         let selectInTabular = $('.tabular select:not([multiple]):not(.select2-hidden-accessible)');
         if (selectInTabular.length) {
-            $(selectInTabular).select2({width: '85%'}).on('select2:select', function () {
+            $(selectInTabular).select2({width: '85%',allowClear: true, placeholder: "Nothing selected"}).on('select2:select', function () {
             });
         }
     }
 
     let other = $('select:not([multiple]):not(.select2-hidden-accessible):not(.select2-ignore)');
     if (other.length) {
-        $(other).select2().on('select2:select', function () {
+        $(other).select2({allowClear: true, placeholder: "Nothing selected"}).on('select2:select', function () {
         });
     }
 }
