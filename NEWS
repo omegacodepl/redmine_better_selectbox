@@ -1,4 +1,7 @@
 0.1.4 (05-11-2020)
+ - [Fix] Bugs related to plugin name change
+
+0.1.4 (05-11-2020)
  - [Change] Plugin name changed from redmine_searchable_selectbox to redmine_better_selectbox
 
 0.1.3 (05-11-2020)
